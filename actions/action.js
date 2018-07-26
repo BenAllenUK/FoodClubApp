@@ -1,5 +1,11 @@
-export function addToCounter() {
-    return {
-      type: ADD_TO_COUNTER
-    }
+export function setRating(ratingNumber) {
+  return {
+    rating: ratingNumber
   }
+}
+
+export function setFavourited(isFavourite) {
+  return {
+    favourited: isFavourite
+  }
+}
