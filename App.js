@@ -2,20 +2,15 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 import {Provider} from 'react-redux'
+import { Button } from 'react-native'
+import { connect } from 'react-redux'
+import HomeScreen from './HomeScreen'
 
 import configureStore from './stores/store'
 const store = configureStore()
 
 
-class HomeScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Home!</Text>
-      </View>
-    );
-  }
-}
+
 
 class SettingsScreen extends React.Component {
   render() {
