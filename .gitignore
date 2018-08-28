@@ -2,6 +2,10 @@
 
 # expo
 .expo/
+.vscode/
+.flowconfig
+.watchmanconfig
+.babelrc
 
 # dependencies
 /node_modules

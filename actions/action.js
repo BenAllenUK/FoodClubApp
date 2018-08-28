@@ -1,6 +1,6 @@
 import ReduxThunk from 'redux-thunk'
 import { store } from '../stores/store'
-import { ActionTypes } from '../reducers/restaurantReducer'
+import { ActionTypes } from '../actions/actionTypes'
 
 export function setRating(ratingNumber) {
   return {
@@ -16,22 +16,3 @@ export function setFavourited(isFavourite) {
   }
 }
 
-export function downloadData() {
-  return dispatch => {
-    return fetch('https://jsonplaceholder.typicode.com/posts/1')
-      .then(response => { 
-        return response.json()
-      })
-      .then(json => {
-        console.log(json)
-        dispatch(saveData); 
-      })
-  }
-}
-
-function saveData() {
-  return {
-    type: ActionTypes.FAVOURITE,
-    favourited: false
-  }
-}
