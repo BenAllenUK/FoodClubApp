@@ -10,7 +10,7 @@ class RestaurantDetailOpinion extends React.Component {
     const { text } = this.props;
     return (
       <View style={styles.container}>
-        Opinion Empty
+        <Text>Opinion Empty</Text>
         {/* Start here */}
       </View>
     );

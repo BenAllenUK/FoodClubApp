@@ -71,7 +71,8 @@ class RestaurantDetailScreen extends React.Component {
             <Text style={styles.textTitle}>{data.name.toUpperCase()}</Text>
             <Text style={styles.textDescription}>{data.description}</Text>
           </View>
-
+        </View>
+        <View style={styles.body}>
           <RestaurantDetailSummary
             priceRange={data.priceRange}
             closingTime={data.closingTime}
@@ -83,7 +84,6 @@ class RestaurantDetailScreen extends React.Component {
           <RestaurantDetailRecommendations text={data.recommendation} />
           <RestaurantDetailAbout text={data.about} />
         </View>
-        <View style={styles.body} />
       </View>
     );
   }

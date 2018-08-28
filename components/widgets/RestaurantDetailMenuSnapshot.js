@@ -10,7 +10,7 @@ class RestaurantDetailMenuSnapshot extends React.Component {
     const { data } = this.props;
     return (
       <View style={styles.container}>
-        Menu Snapshot
+        <Text>Menu Snapshot</Text>
         {/* Start here */}
       </View>
     );

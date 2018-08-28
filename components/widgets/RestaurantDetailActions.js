@@ -10,7 +10,7 @@ class RestaurantDetailActions extends React.Component {
     const { id } = this.props;
     return (
       <View style={styles.container}>
-        Actions Empty
+        <Text>Actions Empty</Text>
         {/* Start here */}
       </View>
     );

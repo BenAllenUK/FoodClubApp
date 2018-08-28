@@ -10,7 +10,7 @@ class RestaurantDetailAbout extends React.Component {
     const { data } = this.props;
     return (
       <View style={styles.container}>
-        About Information
+        <Text>About Information</Text>
         {/* Start here */}
       </View>
     );

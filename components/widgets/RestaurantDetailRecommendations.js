@@ -10,7 +10,7 @@ class RestaurantDetailRecommendations extends React.Component {
     const { text } = this.props;
     return (
       <View style={styles.container}>
-        Recommendations
+        <Text>Recommendations</Text>
         {/* Start here */}
       </View>
     );

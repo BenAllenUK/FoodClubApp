@@ -10,7 +10,7 @@ class RestaurantDetailSummary extends React.Component {
     const { priceRange, closingTime, busyness } = this.props;
     return (
       <View style={styles.container}>
-        Summary Empty
+        <Text>Summary Empty</Text>
         {/* Start here */}
       </View>
     );
