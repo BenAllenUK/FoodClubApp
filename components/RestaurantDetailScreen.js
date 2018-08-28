@@ -4,6 +4,13 @@ import { Button, TouchableOpacity, Image } from "react-native";
 import { connect } from "react-redux";
 import { iOSUIKit } from "react-native-typography";
 
+import RestaurantDetailSummary from "./widgets/RestaurantDetailSummary";
+import RestaurantDetailOpinion from "./widgets/RestaurantDetailOpinion";
+import RestaurantDetailActions from "./widgets/RestaurantDetailActions";
+import RestaurantDetailMenuSnapshot from "./widgets/RestaurantDetailMenuSnapshot";
+import RestaurantDetailRecommendations from "./widgets/RestaurantDetailRecommendations";
+import RestaurantDetailAbout from "./widgets/RestaurantDetailAbout";
+
 const mapDispatchToProps = dispatch => {
   return {};
 };
@@ -17,10 +24,7 @@ const data = {
   name: "Beadle",
   description: "£-££  ·  BRITISH  ·  3 mins",
   image:
-    "https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&h=350"
-};
-
-const data = {
+    "https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&h=350",
   priceRange: "£10-20",
   closingTime: "23:30",
   busyness: "peak",
@@ -49,7 +53,6 @@ const data = {
 
 class RestaurantDetailScreen extends React.Component {
   render() {
-    const { name, description, image } = data;
     return (
       <View>
         <View style={styles.header}>
@@ -59,14 +62,14 @@ class RestaurantDetailScreen extends React.Component {
                 flex: 1
               }}
               source={{
-                uri: image
+                uri: data.image
               }}
             />
           </View>
 
           <View style={styles.textContainer}>
-            <Text style={styles.textTitle}>{name.toUpperCase()}</Text>
-            <Text style={styles.textDescription}>{description}</Text>
+            <Text style={styles.textTitle}>{data.name.toUpperCase()}</Text>
+            <Text style={styles.textDescription}>{data.description}</Text>
           </View>
 
           <RestaurantDetailSummary
@@ -75,7 +78,7 @@ class RestaurantDetailScreen extends React.Component {
             busyness={data.busyness}
           />
           <RestaurantDetailOpinion text={data.opinion} />
-          <RestaurantDetailActions />
+          <RestaurantDetailActions id="1" />
           <RestaurantDetailMenuSnapshot data={data.menuSnapshot} />
           <RestaurantDetailRecommendations text={data.recommendation} />
           <RestaurantDetailAbout text={data.about} />

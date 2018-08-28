@@ -18,7 +18,7 @@ class RestaurantDetailMenuSnapshot extends React.Component {
 }
 
 RestaurantDetailMenuSnapshot.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.array.isRequired
 };
 
 const styles = StyleSheet.create({
