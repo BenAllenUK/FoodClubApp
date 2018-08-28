@@ -50,48 +50,56 @@ const data = {
   about:
     "Bar: Open till late\nMonday-Friday: 08.00 — 22.30\nSaturday: 10.00 — 22.30\nSunday: 10.00 — 16.00"
 };
+import ParallaxScrollView from "react-native-parallax-scroll-view";
 
 class RestaurantDetailScreen extends React.Component {
   render() {
     return (
-      <View>
-        <View style={styles.header}>
-          <View style={styles.imageContainer}>
-            <Image
-              style={{
-                flex: 1
-              }}
-              source={{
-                uri: data.image
-              }}
+      <ParallaxScrollView
+        contentBackgroundColor="white"
+        parallaxHeaderHeight={340}
+        renderForeground={() => (
+          <View style={styles.header}>
+            <View style={styles.imageContainer}>
+              <Image
+                style={{
+                  flex: 1
+                }}
+                source={{
+                  uri: data.image
+                }}
+              />
+            </View>
+            <View style={styles.textContainer}>
+              <Text style={styles.textTitle}>{data.name.toUpperCase()}</Text>
+              <Text style={styles.textDescription}>{data.description}</Text>
+            </View>
+          </View>
+        )}
+      >
+        <View style={{ height: 700 }}>
+          <Text>Hello World</Text>
+          <View style={styles.body}>
+            <RestaurantDetailSummary
+              priceRange={data.priceRange}
+              closingTime={data.closingTime}
+              busyness={data.busyness}
             />
-          </View>
-
-          <View style={styles.textContainer}>
-            <Text style={styles.textTitle}>{data.name.toUpperCase()}</Text>
-            <Text style={styles.textDescription}>{data.description}</Text>
+            <RestaurantDetailOpinion text={data.opinion} />
+            <RestaurantDetailActions id="1" />
+            <RestaurantDetailMenuSnapshot data={data.menuSnapshot} />
+            <RestaurantDetailRecommendations text={data.recommendation} />
+            <RestaurantDetailAbout text={data.about} />
           </View>
         </View>
-        <View style={styles.body}>
-          <RestaurantDetailSummary
-            priceRange={data.priceRange}
-            closingTime={data.closingTime}
-            busyness={data.busyness}
-          />
-          <RestaurantDetailOpinion text={data.opinion} />
-          <RestaurantDetailActions id="1" />
-          <RestaurantDetailMenuSnapshot data={data.menuSnapshot} />
-          <RestaurantDetailRecommendations text={data.recommendation} />
-          <RestaurantDetailAbout text={data.about} />
-        </View>
-      </View>
+      </ParallaxScrollView>
     );
   }
 }
 
 const styles = StyleSheet.create({
   header: {
-    height: 350
+    height: 340
   },
   imageContainer: {
     position: "absolute",
