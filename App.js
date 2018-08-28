@@ -6,6 +6,7 @@ import {
 } from "react-navigation";
 import { Provider } from "react-redux";
 import ExploreScreen from "./components/ExploreScreen";
+import RestaurantDetailScreen from "./components/RestaurantDetailScreen";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 import configureStore from "./stores/store";
@@ -21,20 +22,10 @@ class SettingsScreen extends React.Component {
   }
 }
 
-class DetailsScreen extends React.Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>Details!</Text>
-      </View>
-    );
-  }
-}
-
 const ExploreStack = createStackNavigator(
   {
     Explore: ExploreScreen,
-    RestaurantDetail: DetailsScreen
+    RestaurantDetail: RestaurantDetailScreen
   },
   {
     headerMode: "none",
@@ -47,7 +38,7 @@ const ExploreStack = createStackNavigator(
 const SettingsStack = createStackNavigator(
   {
     Settings: SettingsScreen,
-    Details: DetailsScreen
+    Details: RestaurantDetailScreen
   },
   {
     headerMode: "none",

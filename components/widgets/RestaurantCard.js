@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StyleSheet, Text, View } from "react-native";
 import { Button, ScrollView, Image, TouchableOpacity } from "react-native";
+import { iOSUIKit } from "react-native-typography";
 import { connect } from "react-redux";
 
 const mapDispatchToProps = dispatch => {
@@ -14,10 +15,11 @@ const mapStateToProps = state => {
 
 class RestaurantCard extends React.Component {
   render() {
+    const { id, name, description, image } = this.props;
     return (
       <TouchableOpacity
         onPress={() => {
-          this.props.onRestaurantSelect({ id: this.props.id });
+          this.props.onRestaurantSelect({ id: id });
         }}
         style={styles.container}
       >
@@ -27,14 +29,14 @@ class RestaurantCard extends React.Component {
               flex: 1
             }}
             source={{
-              uri: this.props.image
+              uri: image
             }}
           />
         </View>
 
         <View style={styles.textContainer}>
-          <Text style={styles.textTitle}>{this.props.name.toUpperCase()}</Text>
-          <Text style={styles.textDescription}>{this.props.description}</Text>
+          <Text style={styles.textTitle}>{name.toUpperCase()}</Text>
+          <Text style={styles.textDescription}>{description}</Text>
         </View>
       </TouchableOpacity>
     );
@@ -75,13 +77,11 @@ const styles = StyleSheet.create({
   },
   textTitle: {
     textAlign: "center",
-    fontSize: 30,
-    color: "#FFF"
+    ...iOSUIKit.largeTitleEmphasizedWhiteObject
   },
   textDescription: {
     textAlign: "center",
-    fontSize: 14,
-    color: "#FFF"
+    ...iOSUIKit.subheadWhiteObject
   }
 });
 

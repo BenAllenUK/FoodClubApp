@@ -2,7 +2,8 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button, ScrollView, FlatList, TouchableOpacity } from "react-native";
 import { connect } from "react-redux";
-import RestaurantCard from "./RestaurantCard";
+import { iOSUIKit } from "react-native-typography";
+import RestaurantCard from "./widgets/RestaurantCard";
 import restaurantsApi from "../api/restaurantApi";
 
 const mapDispatchToProps = dispatch => {
@@ -110,15 +111,14 @@ class ExploreScreen extends React.Component {
 const styles = StyleSheet.create({
   appTitle: {
     color: "#8C8C8C",
-    fontSize: 14,
+    ...iOSUIKit.footnoteObject,
     marginLeft: 20,
     marginTop: 60
   },
   pageTitle: {
-    color: "#000",
-    fontSize: 34,
+    ...iOSUIKit.largeTitleEmphasizedObject,
     marginLeft: 20,
-    marginBottom: 20
+    marginTop: 5
   },
   flatList: {
     marginTop: 20
