@@ -3,5 +3,7 @@
     "sdkVersion": "27.0.0",
     "slug": "FoodClub",
     "name": "FoodClub"
-  }
+  },
+  "name": "FoodClub",
+  "displayName": "London Food Club"
 }

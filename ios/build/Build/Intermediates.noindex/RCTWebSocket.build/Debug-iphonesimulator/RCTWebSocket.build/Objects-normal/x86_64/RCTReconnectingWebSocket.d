@@ -1,0 +1,17 @@
+dependencies: \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/Libraries/WebSocket/RCTReconnectingWebSocket.m \
+  RCTReconnectingWebSocket.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/fishhook/fishhook.h \
+  RCTSRWebSocket.h

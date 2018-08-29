@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/benallen/Projects/FoodClub/FoodClub/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h
