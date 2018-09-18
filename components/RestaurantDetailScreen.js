@@ -42,7 +42,7 @@ const data = {
       image: "https://gbc-cdn-public-media.azureedge.net/img17687.768x512.jpg",
       line1: "Grilled sea bass, red coconut curry,",
       line2: "with tomato, kale, robiola, chilli",
-      price: "£12.00"
+      price: "£14.00"
     }
   ],
   recommendation:
@@ -77,8 +77,7 @@ class RestaurantDetailScreen extends React.Component {
           </View>
         )}
       >
-        <View style={{ height: 700 }}>
-          <Text>Hello World</Text>
+        <View style={{  }}>
           <View style={styles.body}>
             <RestaurantDetailSummary
               priceRange={data.priceRange}

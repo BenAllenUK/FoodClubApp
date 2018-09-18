@@ -7,13 +7,20 @@ export default class RestaurantDetailOpinion extends React.Component {
     const { text } = this.props;
     return (
       <View style={styles.container}>
-        <Text>Opinion Empty</Text>
-        {/* Start here */}
+        <Text style={styles.body}>{text}</Text>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {}
+  container: {},
+  body: { 
+    marginLeft: 20, 
+    marginVertical: 10, 
+    marginRight: 10, 
+    fontSize: 13, 
+    color:"#606060",
+    lineHeight: 18
+  }
 });
